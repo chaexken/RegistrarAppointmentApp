@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieTicketApp.Views.BookingPage"
+             BackgroundColor="Maroon">
+    <ContentPage.Content>
+        <ScrollView>
+
+            <StackLayout Spacing="10">
+                <Label Text="Choose your document" FontSize="20" TextColor="AntiqueWhite" FontAttributes="Bold" />
+
+                
+            <Button Text="Registration Form" Clicked="Button_Clicked"  />
+
+                <Button Text="Certified True Copy (CTC)" Clicked="Button_Clicked_1"/>
+
+                <Button Text="ComCard/Grades" Clicked="Button_Clicked_2"  />
+
+                <Button Text="Clearance" Clicked="Button_Clicked_3"  />
+                
+                <Button Text="Home page" Clicked="Button_Clicked_6"  />
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

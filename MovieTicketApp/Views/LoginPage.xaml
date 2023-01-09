@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieTicketApp.Views.LoginPage"
+              BackgroundColor="Maroon">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="Movie.jpeg" WidthRequest="200" HeightRequest="200" Margin="50"></Image>
+                <Grid VerticalOptions="CenterAndExpand" Margin="20" RowSpacing="45">
+                
+
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+
+                </Grid.RowDefinitions>
+
+                    <Entry Placeholder="Username"  Grid.Row="0" x:Name="EntryUsername"/>
+
+                    <Entry Placeholder="Password"  IsPassword="True" Grid.Row="1" x:Name="EntryPassword"/>
+
+                    
+
+                    <Button Text="Login" Grid.Row="2" BackgroundColor="#0077be" TextColor="White" Clicked="Button_Clicked_2"/>
+
+                    <Button Text="SignUp" Grid.Row="3"  Clicked="Button_Clicked_1"/>
+                </Grid>
+            
+            </StackLayout>
+        
+        </ScrollView>
+    
+    </ContentPage.Content>
+</ContentPage>

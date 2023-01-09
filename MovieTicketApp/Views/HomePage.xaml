@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieTicketApp.Views.HomePage"
+             BackgroundColor="Maroon">
+    <ContentPage.Content>
+        <ScrollView>
+        <StackLayout>
+                <Image Source="perps.png" WidthRequest="200" HeightRequest="200" Margin="50"></Image>
+
+                <Grid VerticalOptions="CenterAndExpand" Margin="20" RowSpacing="20">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+
+                    <Label Text="UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA - CALAMBA CAMPUS" FontSize="18" FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="0"/>
+
+                    <Label Text="Registrar Office" FontSize="18"  FontAttributes="Bold" VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="1"/>
+
+                    <Label Text="Set your appointment here" FontSize="18" FontAttributes="Bold"  VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2"/>
+
+                    <Button Text="Appointment" 
+                    TextColor="White" 
+                    BackgroundColor="Transparent" 
+                    BorderWidth="1.5" 
+                    BorderColor="LightGreen"
+                    Clicked="Button_Clicked" 
+                            Grid.Row="3"/>
+
+                    <Button Text="Logout" 
+                    TextColor="White" 
+                    BackgroundColor="Transparent" 
+                    BorderWidth="1.5" 
+                    BorderColor="Red"
+                    Clicked="Button_Clicked_1"
+                            Grid.Row="4"/>
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MovieTicketApp.Views.TicketPage" 
+             Title="Registrar office"
+              BackgroundColor="Maroon">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Image Source="perps.png" WidthRequest="300" HeightRequest="300" Margin="20"></Image>
+                <Grid VerticalOptions="CenterAndExpand" Margin="20" RowSpacing="10">
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+                        <RowDefinition/>
+
+                    </Grid.RowDefinitions>
+
+                    <Picker x:Name="MainPicker"
+                    Title="Date"
+                            Grid.Row="1"
+                    SelectedIndexChanged="MainPicker_SelectedIndexChanged" />
+
+                    <Picker x:Name="MainPicker2"
+                    Title="Time"
+                             Grid.Row="2"
+                    SelectedIndexChanged="MainPicker2_SelectedIndexChanged"/>
+
+                    <Button Text="Save" Grid.Row="3" Clicked="Button_Clicked"/>
+
+                    <Button Text="Back to Home Page" Grid.Row="4" Clicked="Button_Clicked_1"/>
+
+                </Grid>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
